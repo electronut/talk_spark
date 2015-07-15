@@ -11,7 +11,7 @@ Sample run:
 $ python talk_spark.py --at XXXX_ACCESS_TOKEN --list
 [
     {
-        'connected': True, 
+    'connected': True, 
 	'last_heard': '2015-02-26T02:17:22.450Z', 
 	'last_app': None, 
 	'id': 'xxxxxxx', 
