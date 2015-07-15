@@ -21,6 +21,7 @@ def listCores(access_token):
     baseURL = 'https://api.spark.io/v1/devices?access_token='
     fullURL = baseURL + access_token
     f = urllib2.urlopen(fullURL)
+    coreList = json.loads(f.read())
     f.close()
     print json.dumps(coreList, indent=4, sort_keys=True)
 
