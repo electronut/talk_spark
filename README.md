@@ -9,7 +9,15 @@ Sample run:
 
 ```
 $ python talk_spark.py --at XXXX_ACCESS_TOKEN --list
-[{u'connected': True, u'last_heard': u'2015-02-26T02:17:22.450Z', u'last_app': None, u'id': u'xxxxxxx', u'name': u'yyyy'}]
+[
+    {
+        'connected': True, 
+	'last_heard': '2015-02-26T02:17:22.450Z', 
+	'last_app': None, 
+	'id': 'xxxxxxx', 
+	'name': 'yyyy'
+    }
+]
 ```
 
 ```
