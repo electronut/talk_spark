@@ -14,7 +14,6 @@ import threading
 import time
 import urllib2
 import json
-import yaml
 from sseclient import SSEClient
 
 # list registered cores 
@@ -22,10 +21,8 @@ def listCores(access_token):
     baseURL = 'https://api.spark.io/v1/devices?access_token='
     fullURL = baseURL + access_token
     f = urllib2.urlopen(fullURL)
-    #coreList = json.loads(f.read())
-    coreList = yaml.safe_load(f.read())
     f.close()
-    return coreList
+    print json.dumps(coreList, indent=4, sort_keys=True)
 
 
 # worker thread method that fetches notifications
